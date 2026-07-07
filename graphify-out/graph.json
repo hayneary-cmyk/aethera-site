@@ -1,0 +1,587 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "index.html",
+      "source_file": "index.html",
+      "file_type": "document",
+      "description": "Single-page local/Vercel site for the newest AETHERA world bible.",
+      "id": "page_index",
+      "community": 0,
+      "norm_label": "index.html"
+    },
+    {
+      "label": "aethera-3000-hero.png",
+      "source_file": "assets/aethera-3000-hero.png",
+      "file_type": "image",
+      "description": "Generated cinematic hero image used as the page background.",
+      "id": "asset_hero_image",
+      "community": 0,
+      "norm_label": "aethera-3000-hero.png"
+    },
+    {
+      "label": "AETHERA",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Project/world bible visualized by the page.",
+      "id": "aethera",
+      "community": 0,
+      "norm_label": "aethera"
+    },
+    {
+      "label": "An 3000",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Most recent setting: stabilized post-civilization Earth.",
+      "id": "year_3000",
+      "community": 0,
+      "norm_label": "an 3000"
+    },
+    {
+      "label": "Monde remplac\u00e9",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "The world is neither saved nor destroyed, but shifted into another stable equilibrium.",
+      "id": "world_replaced",
+      "community": 1,
+      "norm_label": "monde remplace"
+    },
+    {
+      "label": "+72 m sea rise",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Sea level rise after the Mont\u00e9e.",
+      "id": "sea_rise_72m",
+      "community": 0,
+      "norm_label": "+72 m sea rise"
+    },
+    {
+      "label": "+4 \u00b0C stabilized climate",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Warm climate with managed extremes.",
+      "id": "warm_climate_4c",
+      "community": 1,
+      "norm_label": "+4 \u00b0c stabilized climate"
+    },
+    {
+      "label": "60 million humans",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Approximate remaining human population.",
+      "id": "sixty_million_humans",
+      "community": 2,
+      "norm_label": "60 million humans"
+    },
+    {
+      "label": "Year 297 of l\u2019\u00c9tale",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Stationary era after sea level and climate lock.",
+      "id": "etale_297",
+      "community": 0,
+      "norm_label": "year 297 of l\u2019etale"
+    },
+    {
+      "label": "Programmes de Maintien",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Last coordinated human systems: microbial carbon, ecological restoration, infrastructure self-repair.",
+      "id": "programmes_maintien",
+      "community": 3,
+      "norm_label": "programmes de maintien"
+    },
+    {
+      "label": "Le Versement",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Date when humans stopped being able to write into the system.",
+      "id": "versement",
+      "community": 3,
+      "norm_label": "le versement"
+    },
+    {
+      "label": "La Mont\u00e9e",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Four centuries of sea-level rise.",
+      "id": "montee",
+      "community": 3,
+      "norm_label": "la montee"
+    },
+    {
+      "label": "L\u2019\u00c9tale",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Present stationary world era.",
+      "id": "etale",
+      "community": 3,
+      "norm_label": "l\u2019etale"
+    },
+    {
+      "label": "No\u00e8ses",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Distributed planetary metabolism that thinks without speaking.",
+      "id": "noeses",
+      "community": 1,
+      "norm_label": "noeses"
+    },
+    {
+      "label": "Le Feutre",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Living conductive substrate covering drowned ruins and sea floors.",
+      "id": "feutre",
+      "community": 1,
+      "norm_label": "le feutre"
+    },
+    {
+      "label": "Liya, Non-Traduite",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "A body the Feutre cannot parse, treated by the world as noise.",
+      "id": "liya_non_traduite",
+      "community": 1,
+      "norm_label": "liya, non-traduite"
+    },
+    {
+      "label": "La Mer Amazone",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Warm interior Amazon sea with forest archipelagos.",
+      "id": "mer_amazone",
+      "community": 0,
+      "norm_label": "la mer amazone"
+    },
+    {
+      "label": "La Mer Basse",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Shallow North European sea and large field of ruins.",
+      "id": "mer_basse",
+      "community": 4,
+      "norm_label": "la mer basse"
+    },
+    {
+      "label": "Villes-r\u00e9cifs",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Drowned cities accreted into calcium reef structures.",
+      "id": "villes_recifs",
+      "community": 4,
+      "norm_label": "villes-recifs"
+    },
+    {
+      "label": "C\u00f4tes Australes",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Deglaciated Antarctica where the Feutre is thick and active.",
+      "id": "cotes_australes",
+      "community": 1,
+      "norm_label": "cotes australes"
+    },
+    {
+      "label": "Les Laisses",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Amphibious settlements on new coasts.",
+      "id": "laisses",
+      "community": 2,
+      "norm_label": "les laisses"
+    },
+    {
+      "label": "Les Tenures",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Platforms anchored above city-reefs.",
+      "id": "tenures",
+      "community": 2,
+      "norm_label": "les tenures"
+    },
+    {
+      "label": "Les Hauts",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Interior communities far from the Feutre.",
+      "id": "hauts",
+      "community": 2,
+      "norm_label": "les hauts"
+    },
+    {
+      "label": "La remonte",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Diving extraction in the old drowned world.",
+      "id": "remonte",
+      "community": 4,
+      "norm_label": "la remonte"
+    },
+    {
+      "label": "Pierre pouss\u00e9e",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Cultivated calcium carbonate material.",
+      "id": "pierre_poussee",
+      "community": 2,
+      "norm_label": "pierre poussee"
+    },
+    {
+      "label": "Feux longs",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Optical relays between high places.",
+      "id": "feux_longs",
+      "community": 2,
+      "norm_label": "feux longs"
+    },
+    {
+      "label": "\u00c9nergie bleue",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Osmotic energy at estuaries and salinity gradients.",
+      "id": "energie_bleue",
+      "community": 0,
+      "norm_label": "energie bleue"
+    },
+    {
+      "label": "M\u00e9tal remont\u00e9",
+      "source_file": "index.html",
+      "file_type": "concept",
+      "description": "Recycled metal recovered from drowned ruins.",
+      "id": "metal_remonte",
+      "community": 0,
+      "norm_label": "metal remonte"
+    }
+  ],
+  "links": [
+    {
+      "relation": "visualizes",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "page_index",
+      "target": "aethera",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses_asset",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "page_index",
+      "target": "asset_hero_image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "embodies",
+      "source_file": "assets/aethera-3000-hero.png",
+      "confidence": "INFERRED",
+      "rationale": "Generated specifically for AETHERA an 3000 visual identity.",
+      "source": "asset_hero_image",
+      "target": "year_3000",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "current_setting",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "aethera",
+      "target": "year_3000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "powers",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "energie_bleue",
+      "target": "year_3000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "etale",
+      "target": "year_3000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "material_of",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "metal_remonte",
+      "target": "year_3000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "includes_place",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "cotes_australes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "has_marker",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "etale_297",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "includes_place",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "mer_amazone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "includes_place",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "mer_basse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "has_marker",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "sea_rise_72m",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "has_marker",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "sixty_million_humans",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "includes_place",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "villes_recifs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "has_marker",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "warm_climate_4c",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defined_by",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "year_3000",
+      "target": "world_replaced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "maintain",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "noeses",
+      "target": "world_replaced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "regulate",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "noeses",
+      "target": "warm_climate_4c",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inhabit",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "sixty_million_humans",
+      "target": "hauts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inhabit",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "sixty_million_humans",
+      "target": "laisses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inhabit",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "sixty_million_humans",
+      "target": "tenures",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "evolve_into",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "programmes_maintien",
+      "target": "noeses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "lead_to",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "programmes_maintien",
+      "target": "versement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "precedes",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "versement",
+      "target": "montee",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "precedes",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "montee",
+      "target": "etale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "threatened_by",
+      "source_file": "index.html",
+      "confidence": "INFERRED",
+      "rationale": "The system corrects what it cannot parse.",
+      "source": "liya_non_traduite",
+      "target": "noeses",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "substrate",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "noeses",
+      "target": "feutre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "has_active",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "cotes_australes",
+      "target": "feutre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "covers",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "feutre",
+      "target": "villes_recifs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "unreadable_by",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "liya_non_traduite",
+      "target": "feutre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "grown_by",
+      "source_file": "index.html",
+      "confidence": "INFERRED",
+      "rationale": "The page links grown stone and Feutre accretion.",
+      "source": "pierre_poussee",
+      "target": "feutre",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "mer_basse",
+      "target": "villes_recifs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extracts_from",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "remonte",
+      "target": "villes_recifs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "built_above",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "tenures",
+      "target": "villes_recifs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "supports",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "pierre_poussee",
+      "target": "laisses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "communicate_across",
+      "source_file": "index.html",
+      "confidence": "EXTRACTED",
+      "rationale": "",
+      "source": "feux_longs",
+      "target": "hauts",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "9981ccc75f67fa7d1df0a2014283c0312f817857"
+}

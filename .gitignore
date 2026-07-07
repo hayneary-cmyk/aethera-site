@@ -1,2 +1,4 @@
 .vercel
 .DS_Store
+graphify-out/.graphify_*
+graphify-out/cache/
