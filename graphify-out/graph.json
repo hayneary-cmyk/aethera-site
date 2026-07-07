@@ -85,11 +85,11 @@
       "norm_label": "year 297 of l\u2019etale"
     },
     {
-      "label": "Programmes de Maintien",
+      "label": "Systèmes de Stabilisation",
       "source_file": "index.html",
       "file_type": "concept",
       "description": "Last coordinated human systems: microbial carbon, ecological restoration, infrastructure self-repair.",
-      "id": "programmes_maintien",
+      "id": "systemes_stabilisation",
       "community": 3,
       "norm_label": "programmes de maintien"
     },
@@ -121,28 +121,28 @@
       "norm_label": "l\u2019etale"
     },
     {
-      "label": "No\u00e8ses",
+      "label": "R\u00e9seaux lents",
       "source_file": "index.html",
       "file_type": "concept",
       "description": "Distributed planetary metabolism that thinks without speaking.",
-      "id": "noeses",
+      "id": "reseaux_lents",
       "community": 1,
-      "norm_label": "noeses"
+      "norm_label": "reseaux_lents"
     },
     {
-      "label": "Le Feutre",
+      "label": "La Trame vivante",
       "source_file": "index.html",
       "file_type": "concept",
       "description": "Living conductive substrate covering drowned ruins and sea floors.",
-      "id": "feutre",
+      "id": "trame_vivante",
       "community": 1,
-      "norm_label": "le feutre"
+      "norm_label": "la trame vivante"
     },
     {
       "label": "Liya, Non-Traduite",
       "source_file": "index.html",
       "file_type": "concept",
-      "description": "A body the Feutre cannot parse, treated by the world as noise.",
+      "description": "A body the Trame vivante cannot parse, treated by the world as noise.",
       "id": "liya_non_traduite",
       "community": 1,
       "norm_label": "liya, non-traduite"
@@ -178,7 +178,7 @@
       "label": "C\u00f4tes Australes",
       "source_file": "index.html",
       "file_type": "concept",
-      "description": "Deglaciated Antarctica where the Feutre is thick and active.",
+      "description": "Deglaciated Antarctica where the Trame vivante is thick and active.",
       "id": "cotes_australes",
       "community": 1,
       "norm_label": "cotes australes"
@@ -193,19 +193,19 @@
       "norm_label": "les laisses"
     },
     {
-      "label": "Les Tenures",
+      "label": "Les Terrasses",
       "source_file": "index.html",
       "file_type": "concept",
       "description": "Platforms anchored above city-reefs.",
-      "id": "tenures",
+      "id": "terrasses",
       "community": 2,
-      "norm_label": "les tenures"
+      "norm_label": "les terrasses"
     },
     {
       "label": "Les Hauts",
       "source_file": "index.html",
       "file_type": "concept",
-      "description": "Interior communities far from the Feutre.",
+      "description": "Interior communities far from the Trame vivante.",
       "id": "hauts",
       "community": 2,
       "norm_label": "les hauts"
@@ -406,7 +406,7 @@
       "source_file": "index.html",
       "confidence": "EXTRACTED",
       "rationale": "",
-      "source": "noeses",
+      "source": "reseaux_lents",
       "target": "world_replaced",
       "confidence_score": 1.0
     },
@@ -415,7 +415,7 @@
       "source_file": "index.html",
       "confidence": "EXTRACTED",
       "rationale": "",
-      "source": "noeses",
+      "source": "reseaux_lents",
       "target": "warm_climate_4c",
       "confidence_score": 1.0
     },
@@ -443,7 +443,7 @@
       "confidence": "EXTRACTED",
       "rationale": "",
       "source": "sixty_million_humans",
-      "target": "tenures",
+      "target": "terrasses",
       "confidence_score": 1.0
     },
     {
@@ -451,8 +451,8 @@
       "source_file": "index.html",
       "confidence": "EXTRACTED",
       "rationale": "",
-      "source": "programmes_maintien",
-      "target": "noeses",
+      "source": "systemes_stabilisation",
+      "target": "reseaux_lents",
       "confidence_score": 1.0
     },
     {
@@ -460,7 +460,7 @@
       "source_file": "index.html",
       "confidence": "EXTRACTED",
       "rationale": "",
-      "source": "programmes_maintien",
+      "source": "systemes_stabilisation",
       "target": "versement",
       "confidence_score": 1.0
     },
@@ -488,7 +488,7 @@
       "confidence": "INFERRED",
       "rationale": "The system corrects what it cannot parse.",
       "source": "liya_non_traduite",
-      "target": "noeses",
+      "target": "reseaux_lents",
       "confidence_score": 0.5
     },
     {
@@ -496,8 +496,8 @@
       "source_file": "index.html",
       "confidence": "EXTRACTED",
       "rationale": "",
-      "source": "noeses",
-      "target": "feutre",
+      "source": "reseaux_lents",
+      "target": "trame_vivante",
       "confidence_score": 1.0
     },
     {
@@ -506,7 +506,7 @@
       "confidence": "EXTRACTED",
       "rationale": "",
       "source": "cotes_australes",
-      "target": "feutre",
+      "target": "trame_vivante",
       "confidence_score": 1.0
     },
     {
@@ -514,7 +514,7 @@
       "source_file": "index.html",
       "confidence": "EXTRACTED",
       "rationale": "",
-      "source": "feutre",
+      "source": "trame_vivante",
       "target": "villes_recifs",
       "confidence_score": 1.0
     },
@@ -524,16 +524,16 @@
       "confidence": "EXTRACTED",
       "rationale": "",
       "source": "liya_non_traduite",
-      "target": "feutre",
+      "target": "trame_vivante",
       "confidence_score": 1.0
     },
     {
       "relation": "grown_by",
       "source_file": "index.html",
       "confidence": "INFERRED",
-      "rationale": "The page links grown stone and Feutre accretion.",
+      "rationale": "The page links grown stone and Trame vivante accretion.",
       "source": "pierre_poussee",
-      "target": "feutre",
+      "target": "trame_vivante",
       "confidence_score": 0.5
     },
     {
@@ -559,7 +559,7 @@
       "source_file": "index.html",
       "confidence": "EXTRACTED",
       "rationale": "",
-      "source": "tenures",
+      "source": "terrasses",
       "target": "villes_recifs",
       "confidence_score": 1.0
     },
