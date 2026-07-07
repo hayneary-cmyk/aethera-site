@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AETHERA - Bible du monde, an 3000</title>
+  <style>
+    :root {
+      --ink: #18211f;
+      --muted: #61706b;
+      --paper: #f4f1ea;
+      --surface: #fffaf0;
+      --reef: #d8ddcf;
+      --sea: #4f9ca0;
+      --deep: #173f49;
+      --mangrove: #55775f;
+      --amber: #b5793d;
+      --line: rgba(24, 33, 31, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(244, 241, 234, 0.88), rgba(238, 241, 231, 0.96)),
+        radial-gradient(circle at 18% 14%, rgba(79, 156, 160, 0.18), transparent 30%),
+        var(--paper);
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .hero {
+      min-height: 92svh;
+      display: grid;
+      align-items: end;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background-image:
+        linear-gradient(90deg, rgba(8, 24, 27, 0.72), rgba(8, 24, 27, 0.26) 54%, rgba(8, 24, 27, 0.05)),
+        linear-gradient(0deg, rgba(8, 24, 27, 0.72), transparent 38%),
+        url("assets/aethera-3000-hero.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 18svh;
+      background: linear-gradient(180deg, transparent, var(--paper));
+      z-index: -1;
+    }
+
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 22px clamp(20px, 5vw, 72px);
+      color: rgba(255, 250, 240, 0.92);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .nav strong {
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+
+    .nav span {
+      color: rgba(255, 250, 240, 0.72);
+    }
+
+    .hero-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 120px 0 12svh;
+      color: #fffaf0;
+    }
+
+    .kicker {
+      margin: 0 0 16px;
+      color: rgba(255, 250, 240, 0.74);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: clamp(54px, 9vw, 132px);
+      font-weight: 520;
+      line-height: 0.9;
+    }
+
+    .hero-copy {
+      max-width: 680px;
+      margin: 26px 0 0;
+      color: rgba(255, 250, 240, 0.88);
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: 1.35;
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(130px, 1fr));
+      gap: 1px;
+      width: min(920px, 100%);
+      margin-top: 42px;
+      background: rgba(255, 250, 240, 0.22);
+      border: 1px solid rgba(255, 250, 240, 0.2);
+    }
+
+    .metric {
+      min-height: 96px;
+      padding: 18px;
+      background: rgba(16, 44, 48, 0.52);
+      backdrop-filter: blur(12px);
+    }
+
+    .metric b {
+      display: block;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 520;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 6px;
+      color: rgba(255, 250, 240, 0.72);
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 70px 0 88px;
+    }
+
+    section {
+      padding: 54px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1fr);
+      gap: clamp(24px, 6vw, 86px);
+      align-items: start;
+    }
+
+    h2 {
+      margin: 0;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: clamp(34px, 5vw, 70px);
+      font-weight: 520;
+      line-height: 0.98;
+    }
+
+    .lead {
+      margin: 0;
+      color: #30413d;
+      font-size: clamp(19px, 2.2vw, 28px);
+      line-height: 1.35;
+    }
+
+    .text-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+
+    .panel {
+      min-height: 220px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 240, 0.58);
+    }
+
+    .panel h3 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .panel p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .world-map {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      margin-top: 36px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .place {
+      min-height: 190px;
+      padding: 24px;
+      background: linear-gradient(145deg, rgba(255, 250, 240, 0.76), rgba(216, 221, 207, 0.46));
+    }
+
+    .place:nth-child(2) {
+      background: linear-gradient(145deg, rgba(233, 240, 229, 0.78), rgba(79, 156, 160, 0.18));
+    }
+
+    .place:nth-child(3) {
+      background: linear-gradient(145deg, rgba(255, 250, 240, 0.76), rgba(181, 121, 61, 0.16));
+    }
+
+    .place:nth-child(4) {
+      background: linear-gradient(145deg, rgba(232, 237, 223, 0.78), rgba(85, 119, 95, 0.2));
+    }
+
+    .place h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .place p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+      margin-top: 36px;
+    }
+
+    .era {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      gap: 28px;
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .era time {
+      color: var(--amber);
+      font-weight: 720;
+    }
+
+    .era h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+
+    .era p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .lexicon {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 36px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .term {
+      min-height: 132px;
+      padding: 20px;
+      background: rgba(255, 250, 240, 0.68);
+    }
+
+    .term b {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--deep);
+    }
+
+    .term span {
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .quote-band {
+      margin: 34px 0 0;
+      padding: clamp(28px, 5vw, 56px);
+      color: #fffaf0;
+      background:
+        linear-gradient(135deg, rgba(23, 63, 73, 0.96), rgba(48, 65, 61, 0.9)),
+        var(--deep);
+    }
+
+    .quote-band p {
+      max-width: 840px;
+      margin: 0;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4.4vw, 58px);
+      line-height: 1.05;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      padding-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .hero {
+        min-height: 96svh;
+      }
+
+      .hero-metrics,
+      .text-grid,
+      .world-map,
+      .lexicon {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head,
+      .era {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .metric,
+      .panel,
+      .place,
+      .term {
+        min-height: auto;
+      }
+
+      .footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="nav">
+      <strong>AETHERA</strong>
+      <span>Bible du monde, an 3000 - nouvelle fondation V1</span>
+    </div>
+
+    <div class="hero-inner">
+      <p class="kicker">Le monde n’est pas sauvé. Il est remplacé.</p>
+      <h1>An 3000</h1>
+      <p class="hero-copy">
+        Une Terre chaude et stable, redessinée par soixante-douze mètres de mer. Les ruines sont devenues récifs, les villes vivent sur pilotis de pierre poussée, et les noèses régulent le vivant sans parler.
+      </p>
+      <div class="hero-metrics" aria-label="Repères du monde">
+        <div class="metric"><b>+72 m</b><span>niveau des mers après la Montée</span></div>
+        <div class="metric"><b>+4 °C</b><span>climat chaud, amorti, entretenu</span></div>
+        <div class="metric"><b>60 M</b><span>humains environ, sans échelle mondiale</span></div>
+        <div class="metric"><b>297</b><span>année de l’Étale, monde stationnaire</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-head">
+        <h2>Principe</h2>
+        <p class="lead">
+          AETHERA n’est plus une dystopie de méga-corporations. La version la plus récente fonde un monde écologique, physique et post-civilisationnel : rien sans base réelle, rien qui ressemble trop à notre époque.
+        </p>
+      </div>
+      <div class="text-grid">
+        <article class="panel">
+          <h3>Un monde déplacé</h3>
+          <p>La Terre n’a pas été conservée. Les systèmes de maintien lancés par l’humanité ont abandonné l’ancien équilibre pour stabiliser un monde chaud, haut, vivable.</p>
+        </article>
+        <article class="panel">
+          <h3>Une civilisation d’entretien</h3>
+          <p>L’an 3000 ne progresse pas. Il maintient, répare et hérite : énergie bleue, marées, piles microbiennes, métal remonté, fondations cultivées.</p>
+        </article>
+        <article class="panel">
+          <h3>Une mélancolie du soin</h3>
+          <p>Les eaux soignent, les fièvres s’éteignent, les baies nourrissent. Les humains vivent protégés par quelque chose qui ne les connaît pas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Chronologie</h2>
+        <p class="lead">
+          Le canon récent se construit en quatre bascules : effondrement lent, derniers programmes humains, perte du contrôle, puis stabilisation d’un monde nouveau.
+        </p>
+      </div>
+      <div class="timeline">
+        <article class="era">
+          <time>2050-2140</time>
+          <div>
+            <h3>Le Long Versant</h3>
+            <p>Circulation atlantique ralentie, mégadeltas abandonnés, migrations vers les hauteurs. Pas d’apocalypse instantanée : une perte de prise sur trois générations.</p>
+          </div>
+        </article>
+        <article class="era">
+          <time>2090-2180</time>
+          <div>
+            <h3>Les Programmes de Maintien</h3>
+            <p>Consortiums microbiens, restauration écologique et auto-réparation des infrastructures sont lancés pour fonctionner sans supervision continue.</p>
+          </div>
+        </article>
+        <article class="era">
+          <time>~2243</time>
+          <div>
+            <h3>Le Versement</h3>
+            <p>Le dernier protocole de contrôle humain expire. Les lignées techniques fusionnent, échangent des signaux et deviennent un métabolisme planétaire.</p>
+          </div>
+        </article>
+        <article class="era">
+          <time>~2700-3000</time>
+          <div>
+            <h3>L’Étale</h3>
+            <p>La mer cesse de monter. Le climat se verrouille. L’humanité vit dans un monde stationnaire, vaste, entretenu par des noèses lentes et chimiques.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Noèses</h2>
+        <p class="lead">
+          Les noèses sont le cœur dur du nouveau monde : pas des IA, pas des dieux, mais un métabolisme distribué issu des programmes de maintien.
+        </p>
+      </div>
+      <div class="text-grid">
+        <article class="panel">
+          <h3>Le Feutre</h3>
+          <p>Un film vivant, conducteur, gris-vert, fait de bactéries-câbles, de treillis minéraux-microbiens et de mycéliums marins. Il couvre les fonds et les ruines comme une peau.</p>
+        </article>
+        <article class="panel">
+          <h3>Une pensée lente</h3>
+          <p>Les noèses ne parlent pas. Elles régulent par gradients ioniques, signaux moléculaires et impulsions électriques. Une décision peut prendre une saison ou un siècle.</p>
+        </article>
+        <article class="panel">
+          <h3>Liya, Non-Traduite</h3>
+          <p>Liya devient une anomalie physique : un corps que le Feutre ne parvient pas à parser. Elle n’est pas invisible, elle est illisible, et le monde veut corriger ce bruit.</p>
+        </article>
+      </div>
+      <div class="quote-band">
+        <p>Aimer quelqu’un que le monde ne peut pas lire, c’est l’aimer sans aucune garantie.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Géographie</h2>
+        <p class="lead">
+          Les plaines, les deltas et les bassins sont devenus mers. Les terres restantes sont souvent celles que notre monde habitait peu.
+        </p>
+      </div>
+      <div class="world-map">
+        <article class="place">
+          <h3>La Mer Amazone</h3>
+          <p>Un bassin intérieur chaud, semé d’archipels, de cimes mortes blanchies et de forêts nouvelles qui ont appris l’eau salée.</p>
+        </article>
+        <article class="place">
+          <h3>La Mer Basse</h3>
+          <p>L’ancienne plaine d’Europe du Nord, des Pays-Bas à la Baltique, devient un champ de ruines laiteux et le grand chantier du Feutre.</p>
+        </article>
+        <article class="place">
+          <h3>Les villes-récifs</h3>
+          <p>Jakarta, Lagos, Miami ou Venise ne sont plus des villes mais des récifs de carbonate, lentement digérés et préservés.</p>
+        </article>
+        <article class="place">
+          <h3>Les Côtes Australes</h3>
+          <p>L’Antarctique déglacé devient un continent neuf, vert aux bords, presque inhabité, où la régulation du monde semble audible.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Lexique</h2>
+        <p class="lead">
+          Les mots du monde sont marins, biologiques et hérités. Ils donnent une texture plus singulière que les anciens termes de science-fiction classique.
+        </p>
+      </div>
+      <div class="lexicon">
+        <div class="term"><b>le Feutre</b><span>peau vivante et conductrice du monde noyé</span></div>
+        <div class="term"><b>la remonte</b><span>plongée d’extraction dans les villes-récifs</span></div>
+        <div class="term"><b>les Laisses</b><span>villes amphibies des côtes nouvelles</span></div>
+        <div class="term"><b>les Tenures</b><span>plateformes au-dessus des ruines immergées</span></div>
+        <div class="term"><b>les Hauts</b><span>communautés intérieures, loin du Feutre</span></div>
+        <div class="term"><b>pierre poussée</b><span>carbonate cultivé sur treillis immergé</span></div>
+        <div class="term"><b>feux longs</b><span>relais optiques entre les hauteurs</span></div>
+        <div class="term"><b>non-traduit</b><span>illisible par la chimie des noèses</span></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Source la plus récente : AETHERA Bible Monde 3000 V1.pdf, modifié le 11 juin 2026.</span>
+      <span>Page locale statique - assets intégrés.</span>
+    </footer>
+  </main>
+</body>
+</html>
